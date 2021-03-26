@@ -1,0 +1,107 @@
+
+h1, h2 {
+	text-align: center;
+}
+.promo{
+	height: 800px; 
+	background: url('../img/spa.jpg') center center / cover no-repeat; 
+	display: flex; 
+	align-items: center;
+	&_text {
+		color: white; 
+		font-size: 33px; 
+		font-weight: 400; 
+		font-family: "Roboto Light"; 
+		text-transform: uppercase; 
+		h2.span {
+			color: green; 
+		}
+	}
+	&_btn {
+		text-transform: uppercase; 
+		background-color: transparent; 
+		display: block; 
+		margin: 0 auto; 
+		margin-top: 30px; 
+		padding: 0.9em 2em; 
+		text-decoration: none; 
+		font-size: 25px; 
+		color: #fff;
+		border: solid 2px #fff; 
+		border-radius: 3px; 
+		transition: .4s; 
+		cursor: pointer; 
+		outline: none;
+	}
+} 
+
+.benefits {
+	height: 400px; 
+	background-color: #9aaf8f; 
+	color: #f2eee6; 
+	display: flex; 
+	align-items: center;
+	&_logo{
+		display: block; 
+		margin: 0 auto; 
+		width: 80px; 
+		height: 80px;
+	}
+	&_name {
+		text-align: center;
+		margin: 10px 0 10px 0; 
+		text-transform: uppercase;
+	}
+	&_text {
+		text-align: center;
+		font-size: 16px
+	}
+	&_wrapper {
+		display: flex;
+	}
+	&_item {
+		margin: 0 auto;
+	}
+	&_divider {
+		height: 4px; 
+		width: 50px; 
+		margin: 0 auto; 
+		margin-bottom: 10px; 
+		background-color: #ffffff; 		
+	} 
+} 
+
+.representation{
+	&_img{
+		position: absolute; 
+		z-index: -1; 
+	} 
+	&_text {
+		transform: translateY(250px); 
+		margin-left: 662px;
+		padding: 12px; 
+		background: rgba(255, 255, 255, 0.8); 
+		border: 10px solid #D3C9A3; 
+		font-family: Alegreya; 
+		font-style: normal; 
+		font-weight: bold; 
+		font-size: 33px; 
+		text-transform: uppercase; 
+		color: #3E3B44; 
+		span{
+			text-transform: none; 
+			font-size: 23px;
+		} 
+
+	}
+	&_btn {
+		transform: translateY(290px); 
+		margin-left: 920px; 
+		background: #FF8A00; 
+		border-radius: 15px; 
+		border: none; 
+		padding: 1.5em 4em; 
+		cursor: pointer; 
+		outline: none;
+	}
+} 
