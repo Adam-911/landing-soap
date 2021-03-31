@@ -1,0 +1,25 @@
+.qualities {
+    min-height: auto;
+    &_text {
+        text-align: center;
+        font-family: 'Alegreya';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        letter-spacing: 0.05em;
+        color: #3E3B44;
+        text-transform: uppercase;
+    }
+    &_items {
+        // display: flex;
+        // flex-wrap: wrap; // Вариант с flex-ом
+        display: grid;
+        grid-template-columns: 50% 50%;
+        color: #3E3B44;
+        &_img {
+            max-width: 100%;
+            height: auto;
+            border: 0;
+        }
+    }
+}
