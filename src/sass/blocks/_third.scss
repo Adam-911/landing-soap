@@ -1,0 +1,59 @@
+.care {
+    color: #3E3B44;;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        &_items {
+            &_img {
+                display: block;
+                margin: 0 auto;
+            }
+            &_name {
+                text-align: center;
+                font-family: 'Alegreya';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 35px;
+                margin: 20px 0 20px 0;
+                &_actual {
+                    line-height: 3;
+                }
+                &_exception {
+                    line-height: 1.5;
+                }
+            }
+            // &_nameexception {
+            //     text-align: center;
+            //     font-family: 'Alegreya';
+            //     font-style: normal;
+            //     font-weight: 500;
+            //     font-size: 35px;
+            //     margin: 20px 0 20px 0;
+            //     line-height: 1.5;
+            // }
+            &_text {
+                // margin-bottom: 20px;
+                text-align: center;
+                font-family: 'Comfortaa';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                min-height: 120px;
+            }
+            &_button {
+                margin-top: 20px;
+                &_exception {
+                    display: block;
+                    margin: 0 auto;
+                    padding: 7px;
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    background-color: transparent;
+                    border: 10px solid #d3c9a3;
+                }
+            }
+        }
+    }
+}

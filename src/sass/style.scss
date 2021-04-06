@@ -18,5 +18,18 @@ body {
 	margin: 0 auto; 
 }
 
+.section_header {
+	text-align: center;
+	font-family: 'Alegreya';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 45px;
+	letter-spacing: 0.05em;
+	color: #3E3B44;
+	text-transform: uppercase;
+	margin: 30px 0 30px 0;
+}
+
 @import 'blocks/first';
 @import 'blocks/second';
+@import 'blocks/third';
