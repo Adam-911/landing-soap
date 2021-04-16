@@ -12,6 +12,10 @@ body {
 	background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
 }
 
+header {
+	height: 50px;
+}
+
 .container {
 	position: relative; 
 	width: 1140px; 
@@ -30,6 +34,7 @@ body {
 	margin: 30px 0 30px 0;
 }
 
+@import 'blocks/header';
 @import 'blocks/first';
 @import 'blocks/second';
 @import 'blocks/third';
