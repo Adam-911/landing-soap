@@ -1,15 +1,100 @@
+.grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
 .qualities {
-    min-height: auto;
-    &_items {
-        // display: flex;
-        // flex-wrap: wrap; // Вариант с flex-ом
-        display: grid;
-        grid-template-columns: 50% 50%;
+    min-height: 100vh;
+    &_text {
+        font-family: Alegreya;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 82px;
+        text-align: center;
+        letter-spacing: 0.05em;
         color: #3E3B44;
-        &_img {
-            max-width: 100%;
-            height: auto;
-            border: 0;
+    }
+    &_item {
+        margin-top: 20px;
+        color: #3E3B44;
+        &_promo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 385px;
+            &_title {
+                border: 10px solid #D3C9A3;
+                width: 97%;
+                height: 97px;
+                background: rgba(255,255,255,.8);
+                text-transform: uppercase;
+                font-family: Alegreya;
+                font-size: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: 0.05em;
+            }
+            &_left {
+                margin-right: 135px;
+                width: 428px;
+                text-align: right;
+                &_descr {
+                    height: 150px;
+                    font-family: Comfortaa;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+                &_btn {
+                    font-family: Comfortaa;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    right: 30px;
+                    width: 165px;
+                    height: 62px;
+                    left: calc(50% - 165px/2 - 194.5px);
+                    top: 1470px;
+                    border: none;
+                    background: #F2CD5C;
+                    border-radius: 15px;
+                }
+            }
+            &_right {
+                margin-left: 135px;
+                width: 428px;
+                &_descr {
+                    height: 150px;
+                    font-family: Comfortaa;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                }
+                &_btn {
+                    font-family: Comfortaa;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    text-align: center;
+                    width: 165px;
+                    height: 62px;
+                    left: calc(50% - 165px/2 - 194.5px);
+                    border: none;
+                    background: #F2CD5C;
+                    border-radius: 15px;
+                }
+            }
+
         }
     }
 }
