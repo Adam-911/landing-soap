@@ -1,0 +1,91 @@
+.produce {
+    min-height: 100vh;
+    color: #3E3B44;;
+
+    &_catalog {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    
+        &_item {
+            position: relative;
+               height: 310px;
+            margin: 20px 0px 0px 0px;
+    
+            &_imgcover {
+                display: block;
+                cursor: pointer;
+                width: 262px;
+                height: 210px;
+            }
+            &_img {
+                display: block;
+                cursor: pointer;
+                width: 262px;
+                height: 210px;
+            }
+            &_img:hover {
+                opacity: 0.25;
+                -moz-transition: all 0.5s ease-in-out; /* эффект перехода для Firefox до версии 16.0 */
+                -webkit-transition: all 0.5s ease-in-out; /* эффект перехода для Chrome до версии 26.0, Safari, Android и iOS */
+                -o-transition: all 0.5s ease-in-out; /* эффект перехода для Opera до версии 12.10 */
+                transition: all 0.5s ease-in-out; /* эффект перехода для других браузеров */
+            }
+            &_title {
+                position: absolute;
+                width: 243px;
+                /* height: 80px; */
+                height: auto;
+                left: calc(50% - 243px/2); /* центрирует блок с текстом по середине родительского - вычисляет лев и прав отступы */
+                top: 180px;
+                border: 10px solid #d3c9a3;
+    
+                &_text {
+                    display: block;
+                    padding: 10px 0;
+                    text-align: center;
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    color: #3E3B44;
+                    font-size: 18px;
+                    background-color: #ffffff;   
+                }
+            }
+            &_price	{
+                position: absolute;
+                bottom: 0;
+                width: 262px;
+    
+                &_button {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-family: 'Comfortaa';
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: bold;
+                    color: #3E3B44;
+                    text-decoration: none;
+                    padding: .5em 2em;
+                    outline: none;
+                    border-width: 2px 0;
+                    border-style: solid none;
+                    border-color: #FDBE33 #000 #D77206;
+                    border-radius: 6px;
+                    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+                    transition: 0.2s;
+                    cursor: pointer;
+                }
+                &_button:hover {
+                    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+                }
+                &_button:active {
+                    background: linear-gradient(#f59500, #f5ae00) #f59500;
+                }
+            }
+        }
+    }
+}
+
+
