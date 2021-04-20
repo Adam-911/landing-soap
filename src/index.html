@@ -262,7 +262,7 @@
                         </span>
                     </div>
                     <div class="produce_catalog_item_price">
-                        <button class="produce_catalog_item_price_button">1000 &#8376</button>
+                        <button data-modal class="produce_catalog_item_price_button">1000 &#8376</button>
                     </div>
                 </div>
                 
@@ -531,7 +531,7 @@
                             <a href="#">Интересно?</a>
                             <a href="#">Тогда оставьте заявку</a>
                             <input type="text" placeholder="Ваш телефон или почта">
-                            <button>Ok</button>
+                            <button data-modal>Ok</button>
                         </div>
                     </div>
                 </div>
@@ -542,5 +542,35 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__preview">
+                        <img src="img/modal/soap_with_additive4 2.jpg" alt="">
+                        <div class="modal__preview_title">Лаванда</div>
+                        <div class="modal__preview_descr">Косметическая линия, цветочный сорт.
+                            Мыло "Лаванда" - нежный и гладкий сорт с густой, кремовой пеной и потрясающим ароматом органического эфирного масла Лаванды, Прованс (Lavandula Burnatii Super), обладает успокаивающими, питательными, увлажняющими, противовоспалительными, защитными свойствоми. Подходит для всех типов кожи, мягко очищает, гипоаллергенное, шикарное средство для ежедневного использования.
+                        </div>
+                        <div class="modal__preview_text">1000</div>
+                    </div>
+                    <div class="modal__order">
+                        <div class="modal__order_title">Заказать можно здесь:</div>
+                        <a href="#">
+                            <img src="icons/inst_modal.svg" alt="" class="modal__order_img">
+                        </a>
+                        <div class="modal__order_subtitle">или
+                            оставить заявку:</div>
+                        <input required placeholder="Ваше имя" name="name" type="text" class="modal__order_input">
+                        <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__order_input">
+                        <button class="modal__order_btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
