@@ -22,9 +22,9 @@ h1, h2 {
 		width:400%;
 		height:100%;
 		position:relative;
-		-webkit-animation:slide 30s infinite;
-		-moz-animation:slide 30s infinite;
-		animation:slide 30s infinite;
+		-webkit-animation:slide 20s infinite;
+		-moz-animation:slide 20s infinite;
+		animation:slide 20s infinite;
 		&_slide {
 			width:25%;
 			height:100%;
@@ -51,9 +51,9 @@ h1, h2 {
 					float:left;
 					position:relative;
 					top:580px;
-					-webkit-animation:content-s 7.5s infinite;
-					-moz-animation:content-s 7.5s infinite;
-					animation:content-s 7.5s infinite;
+					-webkit-animation:content-s 5s infinite;
+					-moz-animation:content-s 5s infinite;
+					animation:content-s 5s infinite;
 				}
 				&_text h1{
 					font-family: Alegreya;
@@ -84,9 +84,9 @@ h1, h2 {
 			border-radius: 50%;
 			background: #f39c12;
 			position: relative;
-			-webkit-animation: on 30s infinite;
-			-moz-animation: on 30s infinite;
-			animation: on 30s infinite;
+			-webkit-animation: on 20s infinite;
+			-moz-animation: on 20s infinite;
+			animation: on 20s infinite;
 		}
 	}
 	&_switch > ul {
