@@ -2,10 +2,11 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    
 }
 .qualities {
     min-height: 100vh;
+    // background-color: #C6C2C3;
     &_text {
         font-family: Alegreya;
         font-style: normal;
