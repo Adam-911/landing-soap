@@ -1,7 +1,14 @@
 .aboutUs {
-    min-height: 100vh;
+    // min-height: 100vh; //чтобы не было большого padding снизу контейнера
     color: #3E3B44;
     background-color: #f2cd5c;
+    padding-bottom: 30px;
+
+    //Позволяет не заезжать верхней части секции за header
+    border-top: 50px solid transparent;
+    margin-top: -50px;
+    // -webkit-background-clip: padding-box; //????
+    background-clip: padding-box;
     
     &_info {
         display: flex;
@@ -17,12 +24,15 @@
                 // position: absolute;
                 top: 0px;
                 left: 0px;
+                width: 420px;
             }
 
             &_photo {
                 position: absolute;
-                top: 85px;
-                left: 166px;
+                top: 90px;
+                left: 150px;
+                // top: 85px;
+                // left: 166px;
                 // border: 10px solid #f2cd5c;
                 box-shadow: 0 0 20px 2px #fff;
             }
@@ -30,7 +40,7 @@
 
         &_description {
             display: inline-block;
-            width: 360px;
+            width: 400px;
         }
 
         &_description h1{
