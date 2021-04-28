@@ -1,0 +1,22 @@
+aside {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    position: fixed;
+    z-index: 200;
+    img {
+        width: 50px;
+    }
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    &_item {
+        margin: 15px 15px;
+        i {
+            color: #fff;
+        }
+    }
+}

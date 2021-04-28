@@ -38,7 +38,16 @@ footer {
 			a {
 				margin-top: 10px;
 				font-family: Comfortaa;
-				font-size: 15px;
+				font-size: 18px;
+				font-style: normal;
+				line-height: 20px;
+				color: white;
+				// text-transform: uppercase;
+			}
+			p {
+				margin-top: 10px;
+				font-family: Comfortaa;
+				font-size: 18px;
 				font-style: normal;
 				line-height: 20px;
 				color: white;
@@ -48,12 +57,15 @@ footer {
 				margin-top: 15px;
 				height: 40px;
 				border: 5px solid #D3C9A3;
+				text-align: center;
 			}
 			button {
 				margin-top: 15px;
 				height: 40px;
 				background: #F2CD5C;
 				border-radius: 5px;
+				font-family: Comfortaa;
+				font-size: 15px;
 			}
 		}
 		&_social {
