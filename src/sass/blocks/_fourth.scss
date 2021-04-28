@@ -18,7 +18,7 @@
             position: relative;
             width: 262px;
             height: 310px;
-            margin: 20px 0px 0px 0px;
+            margin: 10px 0 10px 0;
 
             &_before {
                 position:absolute;
@@ -70,12 +70,12 @@
                 height: auto;
                 left: calc(50% - 243px/2); /* центрирует блок с текстом по середине родительского - вычисляет лев и прав отступы */
                 top: 180px;
-                border: 10px solid #d3c9a3;
+                border: 6px solid #d3c9a3;
                 z-index: 20;
     
                 &_text {
                     display: block;
-                    padding: 10px 0;
+                    padding: 5px 0;
                     text-align: center;
                     font-family: 'Comfortaa';
                     font-style: normal;
@@ -83,8 +83,20 @@
                     font-size: 18px;
                     background-color: #ffffff;   
                 }
+
+                &_price {
+                    display: block;
+                    padding: 5px 0;
+                    text-align: center;
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: bold;
+                    color: #3E3B44;
+                    font-size: 18px;
+                    background-color: #ffffff;   
+                }
             }
-            &_price	{
+           /*  &_price	{
                 position: absolute;
                 bottom: 0;
                 width: 262px;
@@ -115,7 +127,7 @@
                 &_button:active {
                     background: linear-gradient(#f59500, #f5ae00) #f59500;
                 }
-            }
+            } */
         }
     }
 }
