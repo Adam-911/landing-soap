@@ -1,0 +1,70 @@
+.aboutUs {
+    // min-height: 100vh; //чтобы не было большого padding снизу контейнера
+    color: #3E3B44;
+    background-color: #f2cd5c;
+    padding-bottom: 30px;
+
+    //Позволяет не заезжать верхней части секции за header
+    border-top: 50px solid transparent;
+    margin-top: -50px;
+    // -webkit-background-clip: padding-box; //????
+    background-clip: padding-box;
+    
+    &_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        
+        &_img {
+            position: relative;
+            // background-color: #f2cd5c;
+            
+            &_backgr {
+                // position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 420px;
+            }
+
+            &_photo {
+                position: absolute;
+                top: 90px;
+                left: 150px;
+                // top: 85px;
+                // left: 166px;
+                // border: 10px solid #f2cd5c;
+                box-shadow: 0 0 20px 2px #fff;
+            }
+        }
+
+        &_description {
+            display: inline-block;
+            width: 400px;
+        }
+
+        &_description h1{
+            margin: 20px auto;
+            font-family: Alegreya;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 48px;
+            // display: flex;
+            align-items: center;
+            text-align: center;
+            // letter-spacing: 0.05em;
+            color: #3E3B44;
+        }
+
+        &_description span {
+            font-family: Comfortaa;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            color: #3E3B44;
+
+        }
+    }
+}

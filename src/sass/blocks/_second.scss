@@ -2,15 +2,23 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    
 }
 .qualities {
     min-height: 100vh;
+    // background-color: #C6C2C3;
+
+    //Позволяет не заезжать верхней части секции за header
+    border-top: 60px solid transparent;
+    margin-top: -60px;
+    // -webkit-background-clip: padding-box; //????
+    background-clip: padding-box;
+
     &_text {
         font-family: Alegreya;
         font-style: normal;
         font-weight: bold;
-        font-size: 60px;
+        font-size: 45px;
         line-height: 82px;
         text-align: center;
         letter-spacing: 0.05em;
