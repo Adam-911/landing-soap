@@ -1,9 +1,5 @@
     const modalTrigger = document.querySelectorAll('[data-modal]'),
         modal = document.querySelectorAll('.modal');
-        console.log("modal");
-        console.log(modal);
-        console.log("modalTrigger");
-        console.log(modalTrigger);
     let activeOverlay = undefined;
 
     modalTrigger.forEach(btn => {
@@ -18,7 +14,6 @@
     }
 
     function openModal(btn) {
-        // const id = Number(btn.target.id) + 100;
         const id = Number(btn.target.id) + 100;
         activeOverlay = document.getElementById(id);
         activeOverlay.classList.add('show');
@@ -102,12 +97,6 @@
         .then(data => {
             data = data.product
             data.forEach(({childId, img, subSrc, altimg, title, descr, price}) => {
-                new Product(childId, img, subSrc, altimg, title, descr, price, '.catalog-test').render();
+                new Product(childId, img, subSrc, altimg, title, descr, price, '.catalog-modal').render();
             });
     });
-    const modal2 = document.querySelectorAll('.modal');
-    console.log("document");
-    console.log(document);
-    console.log("modal2");
-    console.log(document.querySelectorAll('modal'));
-
