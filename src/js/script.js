@@ -102,7 +102,7 @@
         .then(data => {
             data = data.product
             data.forEach(({childId, img, subSrc, altimg, title, descr, price}) => {
-                new Product(childId, img, subSrc, altimg, title, descr, price, '.catalog-test').render();
+                new Product(childId, img, subSrc, altimg, title, descr, price, '.catalog-modal').render();
             });
     });
     const modal2 = document.querySelectorAll('.modal');
