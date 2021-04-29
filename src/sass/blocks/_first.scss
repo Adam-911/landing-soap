@@ -242,17 +242,41 @@ h1, h2 {
     	position: absolute;
     	right: -150px;
 	}
+	// &_btn {
+	// 	/* transform: translateY(290px); */
+	// 	margin: 20px 0 0 920px;
+	// 	background: #F2CD5C;
+	// 	border-radius: 15px;
+	// 	border: none;
+	// 	padding: 1.5em 2em;
+	// 	font-family: 'Comfortaa';
+    //     font-size: 18px;
+	// 	/* transition: .4s; */
+	// 	cursor: pointer;
+	// 	outline: none;
+	// }
+
 	&_btn {
-		/* transform: translateY(290px); */
+		padding: 20px;
 		margin: 20px 0 0 920px;
-		background: #F2CD5C;
+		text-decoration: none;
+		display: inline-block;
 		border-radius: 15px;
+		font-family: Comfortaa;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		text-align: center;
+		background: #F2CD5C;
 		border: none;
-		padding: 1.5em 2em;
-		font-family: 'Comfortaa';
-        font-size: 18px;
-		/* transition: .4s; */
+		box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+		transition: .3s;
 		cursor: pointer;
-		outline: none;
-	}
+	  }
+	  &_btn:hover {
+		background: #808080;
+		box-shadow: 0 15px 20px rgba(128, 128, 128, .4);
+		color: white;
+		transform: translateY(-7px);
+	  }
 } 

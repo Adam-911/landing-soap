@@ -69,30 +69,10 @@ form {
                     direction: rtl;
                     float: left;
                 }
-                
-                /* &_btn {
-                    font-family: Comfortaa;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    right: 30px;
-                    width: 165px;
-                    height: 62px;
-                    left: calc(50% - 165px/2 - 194.5px);
-                    top: 1470px;
-                    border: none;
-                    background: #F2CD5C;
-                    border-radius: 15px;
-                } */
-
                 &_btn {
-                    left: calc(50% - 165px/2 - 194.5px);
-                    top: 1470px;
+                    padding: 20px 30px;
                     text-decoration: none;
                     display: inline-block;
-                    right: 30px;
-                    width: 165px;
-                    height: 56px;
                     border-radius: 15px;
                     font-family: Comfortaa;
                     font-size: 18px;
@@ -131,28 +111,10 @@ form {
                     margin: 15px 0;
                     line-height: 20px;
                 }
-                
-                /* &_btn {
-                    font-family: Comfortaa;
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 400;
-                    text-align: center;
-                    width: 165px;
-                    height: 62px;
-                    left: calc(50% - 165px/2 - 194.5px);
-                    border: none;
-                    background: #F2CD5C;
-                    border-radius: 15px;
-                } */
                 &_btn {
-                    left: calc(50% - 165px/2 - 194.5px);
-                    top: 1470px;
+                    padding: 20px 30px;
                     text-decoration: none;
                     display: inline-block;
-                    right: 30px;
-                    width: 165px;
-                    height: 56px;
                     border-radius: 15px;
                     font-family: Comfortaa;
                     font-size: 18px;
