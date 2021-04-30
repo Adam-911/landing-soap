@@ -100,3 +100,22 @@
                 new Product(childId, img, subSrc, altimg, title, descr, price, '.catalog-modal').render();
             });
     });
+
+/*     $('form').submit(function(e) {
+        console.log("GOTOVO");
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            // $(this).find("input").val("");
+            // $('#consultation, #order').fadeOut();
+            // $('.overlay, #thanks').fadeIn('slow');
+  
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+    const modalform = document.querySelectorAll('form');
+    console.log(modalform); */
