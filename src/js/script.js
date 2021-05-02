@@ -67,8 +67,8 @@
                             </div>
                             <div class="modal__order">
                                 <div class="modal__order_title">Заказать можно здесь:</div>
-                                <a href="#">
-                                    <img src="icons/inst_modal.svg" alt="" class="modal__order_img">
+                                <a target="_blank" href="https://www.instagram.com/fullpower_soap/">
+                                    <img src="img/icons/inst_modal.svg" alt="" class="modal__order_img">
                                 </a>
                                 <div class="modal__order_subtitle">или
                                     оставить заявку:</div>
