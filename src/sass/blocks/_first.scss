@@ -4,19 +4,25 @@ h1, h2 {
 } 
 
 #slider{
-    width:100%;
+    // width:1140px;
+	min-width: 1140px;
+   	max-width: 1140px;
     height:740px;
-    // position:relative;
     position:absolute;
     z-index: -2;
-    left: -150px;
-    overflow:hidden;
+    left: 100px;
+    overflow: hidden;
   }
 
 .representation {
     min-height: 100vh;
     position: relative;
 	padding-top: 80px;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
 
 	/* Стили для слайдера с анимацией */
 	&_slider {
@@ -208,14 +214,8 @@ h1, h2 {
 		96%{margin-left:60px}
 	}
 
-
-	//Старая статичная картинка
-	// &_img {
-    // 	position: absolute;
-    // 	z-index: -1;
-    // 	left: -150px;
-	// } 
 	&_text {
+		min-width: 650px;
 		margin-left: 559px;
 		padding: 12px;
 		background: rgba(255,255,255,.8);
@@ -238,27 +238,14 @@ h1, h2 {
 		}
 	}
 	&_wrapper {
-		transform: translateY(250px);
+		// transform: translateY(250px);
     	position: absolute;
-    	right: -150px;
+    	right: 80px;
 	}
-	// &_btn {
-	// 	/* transform: translateY(290px); */
-	// 	margin: 20px 0 0 920px;
-	// 	background: #F2CD5C;
-	// 	border-radius: 15px;
-	// 	border: none;
-	// 	padding: 1.5em 2em;
-	// 	font-family: 'Comfortaa';
-    //     font-size: 18px;
-	// 	/* transition: .4s; */
-	// 	cursor: pointer;
-	// 	outline: none;
-	// }
-
+	
 	&_btn {
 		padding: 20px;
-		margin: 20px 0 0 920px;
+		margin: 20px 0 0 1000px;
 		text-decoration: none;
 		display: inline-block;
 		border-radius: 15px;
