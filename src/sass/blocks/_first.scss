@@ -5,13 +5,7 @@ h1, h2 {
 
 #slider{
     // width:1140px;
-	min-width: 1140px;
-   	max-width: 1140px;
-    height:740px;
-    position:absolute;
-    z-index: -2;
-    left: 100px;
-    overflow: hidden;
+
   }
 
 .representation {
@@ -25,6 +19,15 @@ h1, h2 {
     align-items: center;
 
 	/* Стили для слайдера с анимацией */
+	&__slider {
+		min-width: 1140px;
+		max-width: 1140px;
+		height:740px;
+		position:relative;
+		z-index: -2;
+		left: 100px;
+		overflow: hidden;
+	}
 	&_slider {
 		width:400%;
 		height:100%;
