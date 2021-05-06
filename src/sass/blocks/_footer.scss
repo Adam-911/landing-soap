@@ -53,20 +53,29 @@ footer {
 				color: white;
 				text-transform: uppercase;
 			}
-			input {
-				margin-top: 15px;
-				height: 40px;
-				border: 5px solid #D3C9A3;
-				text-align: center;
-			}
-			button {
-				margin-top: 15px;
-				height: 40px;
-				background: #F2CD5C;
-				border-radius: 5px;
-				font-family: Comfortaa;
-				font-size: 15px;
-			}
+			&_feedback {
+				display: block;
+				input {
+					display: block;
+					margin-top: 15px;
+					height: 40px;
+					border: 5px solid #D3C9A3;
+					text-align: center;
+				}
+				button {
+					display: block;
+					margin-top: 15px;
+					height: 40px;
+					background: #F2CD5C;
+					border-radius: 5px;
+					font-family: Comfortaa;
+					font-size: 15px;
+				}
+				&_submit {
+					margin-left: 50px;
+					width: 75px;
+				}
+		    }
 		}
 		&_social {
 			margin-top: 10px;

@@ -846,8 +846,12 @@
                         <div class="footer_links_main">
                             <p href="#">Интересно?</p>
                             <p href="#">Тогда оставьте заявку</p>
-                            <input type="text" placeholder="Ваш телефон или почта">
-                            <button data-modal>Ok</button>
+                            <form class="footer_links_main_feedback" onsubmit="onSubmit('footer'); return false;">
+                                <input name="name" id="name" type="text" placeholder="Ваше имя">
+                                <input name="contact" id="contact" type="text" placeholder="Ваш номер телефона или почта">
+                                <!-- <button data-modal>Ok</button> -->
+                                <input class="footer_links_main_feedback_submit" type="submit" value="ОК">
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -861,6 +865,7 @@
 
     <div class="catalog-modal"></div>
     <script src="js/script.js"></script>
+    <script src="js/formListener.js"></script>
 
 </body>
 </html>

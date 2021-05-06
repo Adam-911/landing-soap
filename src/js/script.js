@@ -72,9 +72,11 @@
                                 </a>
                                 <div class="modal__order_subtitle">или
                                     оставить заявку:</div>
-                                <input required placeholder="Ваше имя" name="name" type="text" class="modal__order_input">
-                                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__order_input">
-                                <button class="modal__order_btn">Отправить</button>
+                                <form onsubmit="onSubmit(true); return false;">
+                                    <input required placeholder="Ваше имя" id="modal_name" name="name" type="text" class="modal__order_input">
+                                    <input required placeholder="Ваш номер телефона или почта" id="modal_contact" name="phone" type="phone" class="modal__order_input">
+                                    <button class="modal__order_btn">Отправить</button>
+                                </form>
                             </div>
                         </form>
                     </div>
@@ -85,7 +87,7 @@
     }
 
     const getResource = async (url) => {
-    const res = await fetch(url);
+    const res = await fetch(url, {mode: 'no-cors'});
 
     if (!res.ok) {
         throw new Error(`Could not fetch ${url}, status: ${res.status}`);
