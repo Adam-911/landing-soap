@@ -1,19 +1,27 @@
-const onSubmit = (type) => {
+let _POPUP = document.getElementById('feedbackpopup'),
+    _OKButton = document.querySelector('.popup_content_feedback');
+
+_OKButton.onclick = function() {
+    console.log("ONCLICK");
+    _POPUP.style.display = 'none';
+}
+
+const onSubmit = (type='') => {
     let name, contact;
-    
+    console.log("llll");
     switch (type) {
         case 'footer':
-            name = document.getElementById('name').value;
-            contact = document.getElementById('contact').value;
+            name = document.getElementById('name');
+            contact = document.getElementById('contact');
             break;
         case 'modal':
             // Значения из modal;  
     }
-    postData('http://localhost:9002/sendmail', { name, contact});
+    sendToMailer('http://localhost:9002/sendmail', { name, contact});
+    // return false;
 }
 
-// Пример отправки POST запроса:
-function postData(url = '', data = {}) {
+function sendToMailer(url = '', data = {}) {
     const myHeaders = new Headers();
 
     const requestOptions = {
@@ -23,8 +31,14 @@ function postData(url = '', data = {}) {
         redirect: 'follow'
     };
 
-    fetch(`${url}/${data.name}/${data.contact}`, requestOptions)
-        .then(response => response.text())
-        .then(result => console.log(result))
+    fetch(`${url}/${data.name.value}/${data.contact.value}`, requestOptions)
+        .then(response => {
+            response.text();
+            _POPUP.style.display = 'block';
+            data.name.value = '';
+            data.contact.value = '';
+        })
+        .then(result => console.log("result" + result))
         .catch(error => console.log('error', error));
 }
+

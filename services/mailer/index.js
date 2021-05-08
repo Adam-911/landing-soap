@@ -8,19 +8,15 @@ const app = express();
 
 ///////////////// SMTP-connection /////////////////
 const transporter = nodemailer.createTransport({
-    // service: 'gmail',
     type: "Email",
-    host : "fullpowersoap.kz",              // smtp server hostname
+    host : "fullpowersoap.kz",
     port : "25",   
-    secure: false,              // smtp server port
+    secure: false,             
     // ssl: true,						// for SSL support - REQUIRES NODE v0.3.x OR HIGHER
-    // domain : "fullpowersoap.kz",
     auth: {
         user: process.env.EMAIL,
         pass: process.env.PASSWORD
     },
-    // internalOnly: false,
-    // productionOnly: false,
     tls: {
         // do not fail on invalid certs
         rejectUnauthorized: false
@@ -77,11 +73,13 @@ app.get('/sendmail/:name/:contact', (req, res) => {
         text:`Имя: ${params.name}, Контакты: ${params.contact}`
     }
 
-    transporter.sendMail(mailOptions, (e) => {
-        console.log(e);
-        res.sendStatus(400);
+    transporter.sendMail(mailOptions, (err, info) => {
+        console.log(err);
+        console.log(info);
+        if (info.accepted[0])
+            res.sendStatus(200);
+        // res.sendStatus(400);
     });
-    res.sendStatus(200);
     console.log("Done!");
 
 })
