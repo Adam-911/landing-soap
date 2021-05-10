@@ -4,24 +4,46 @@ h1, h2 {
 } 
 
 .representation {
-    min-height: 100vh;
+    /* min-height: 100vh;
+	max-height: 100vh; 
+
     position: relative;
 	padding-top: 80px;
 	display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: center; */
+
+	height: 100vh;
+    position: relative;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 800px;
+    min-height: 650px;
+	min-width: 1140px;
 
 	/* Стили для слайдера с анимацией */
 	&__slider {
-		min-width: 1140px;
+		/* min-width: 1140px;
 		max-width: 1140px;
 		height:740px;
 		position:relative;
 		z-index: -2;
 		left: 100px;
+		overflow: hidden; */
+		position: relative;
+		z-index: -2;
+		left: 100px;
 		overflow: hidden;
+		height: 100%;
+		width: 80%;
+		// min-height: 590px;
+		// max-height: 740px;
+		min-width: 885px;
+		max-width: 1140px;
 	}
 	&_slider {
 		width:400%;
@@ -30,6 +52,15 @@ h1, h2 {
 		-webkit-animation:slide 20s infinite;
 		-moz-animation:slide 20s infinite;
 		animation:slide 20s infinite;
+
+		/* min-width: 1140px;
+		max-width: 1140px;
+		height:740px;
+		position:relative;
+		z-index: -2;
+		left: 100px;
+		overflow: hidden; */
+
 		&_slide {
 			width:25%;
 			height:100%;
@@ -55,7 +86,7 @@ h1, h2 {
 					height:150px;
 					float:left;
 					position:relative;
-					top:580px;
+					top: 72%;
 					-webkit-animation:content-s 5s infinite;
 					-moz-animation:content-s 5s infinite;
 					animation:content-s 5s infinite;
@@ -212,38 +243,45 @@ h1, h2 {
 		96%{margin-left:60px}
 	}
 
-	&_text {
-		min-width: 650px;
-		margin-left: 559px;
-		padding: 12px;
-		background: rgba(255,255,255,.8);
-		border: 10px solid #d3c9a3;
-		font-family: Alegreya;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 45px;
-		text-transform: uppercase;
-		color: #3e3b44;
-		/* line-height: 82px; */
-		letter-spacing: 0.05em;
-		span {
+	&_wrapper {
+    	position: absolute;
+		max-width: 650px;
+		right: 80px;
+		top: calc(50% - 80px);
+
+		&_text {
+			background: rgba(255,255,255,.6);
+			border: 10px solid #d3c9a3;
+			min-width: 100%;
+			padding: 15px;
+		}
+		&_text h1 {
+			font-family: Alegreya;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 45px;
+			text-transform: uppercase;
+			color: #3e3b44;
+			letter-spacing: 0.05em;
+			text-align: left;
+		}
+		&_text span {
+			display: block;
 			text-transform: none; 
 			font-size: 23px;
 			font-family: 'Comfortaa';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			color: #3e3b44;
+			text-align: right;
+			letter-spacing: 0.05em;
 		}
-	}
-	&_wrapper {
-		// transform: translateY(250px);
-    	position: absolute;
-    	right: 80px;
 	}
 	
 	&_btn {
 		padding: 20px;
-		margin: 20px 0 0 1000px;
+		margin: 20px auto;
 		text-decoration: none;
 		display: inline-block;
 		border-radius: 15px;

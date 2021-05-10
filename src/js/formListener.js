@@ -9,7 +9,7 @@ const onSubmit = (type) => {
         case 'modal':
             // Значения из modal;  
     }
-    postData('http://localhost:9002/sendmail', { name, contact});
+    postData('https://adamgutov.kz/sendmail', { name, contact});
 }
 
 // Пример отправки POST запроса:
