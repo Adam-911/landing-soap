@@ -93,7 +93,7 @@
         return await res.json();
     };
 
-    getResource('http://localhost/db.json')
+    getResource('../db.json')
         .then(data => {
             data = data.product
             data.forEach(({childId, img, subSrc, altimg, title, descr, price}) => {
