@@ -20,18 +20,18 @@
         color: #fff; /*Цвет текста на странице*/
         border: 1px solid rgba(0,0,0,.2);
         border-radius: 4px;
-        max-height: 100vh;
+        max-height: 90vh;
         overflow-y: auto;
     }
     &__preview {
         position: relative;
         margin-left: 60px;
-        width: 555px;
+        width: 600px;
         &_text {
             position: absolute;
             width: 243px;
             height: 50px;
-            left: calc(80% - 400px/2 + 230px);
+            left: calc(70% - 400px/2 + 230px);
             margin-top: -6em; 
             top: 170px;
             background: rgba(255, 255, 255, 0.8);
@@ -47,10 +47,10 @@
         &_title{
             color:black;
             font-family: Alegreya;
-            font-size: 35px;
+            font-size: 30px;
             font-style: normal;
             font-weight: 500;
-            line-height: 48px;
+            // line-height: 48px;
             letter-spacing: 0.05em;
             text-align: center;
         }
@@ -61,9 +61,16 @@
             font-style: normal;
             font-weight: 400;
             line-height: 25px;
-            letter-spacing: 0em;
-            text-align: center;
+            // letter-spacing: 0em;
+            // text-align: center;
+            text-indent: 20px;
+            text-align: justify;
         }
+    }
+    &__preview img {
+        display: block;
+        width: 450px;
+        margin: 0 auto;
     }
     &__order {
         margin: auto;
