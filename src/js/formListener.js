@@ -16,8 +16,10 @@ const onSubmit = (type='') => {
             break;
         case 'modal':
             // Значения из modal;  
+            name = document.getElementById('modal_name');
+            contact = document.getElementById('modal_contact');
     }
-    sendToMailer('http://localhost:9002/sendmail', { name, contact});
+    sendToMailer('https://adamgutov.kz//sendmail', { name, contact});
     // return false;
 }
 

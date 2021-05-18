@@ -72,7 +72,7 @@
                                 </a>
                                 <div class="modal__order_subtitle">или
                                     оставить заявку:</div>
-                                <form onsubmit="onSubmit(true); return false;">
+                                <form onsubmit="event.preventDefault();onSubmit('modal');return false;">
                                     <input required placeholder="Ваше имя" id="modal_name" name="name" type="text" class="modal__order_input">
                                     <input required placeholder="Ваш номер телефона или почта" id="modal_contact" name="phone" type="phone" class="modal__order_input">
                                     <button class="modal__order_btn">Отправить</button>
